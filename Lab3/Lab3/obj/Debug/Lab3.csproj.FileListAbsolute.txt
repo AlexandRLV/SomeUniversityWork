@@ -1,0 +1,15 @@
+C:\Users\Александр\Source\Repos\DzZulf\Lab3\Lab3\bin\Debug\Lab3.exe.config
+C:\Users\Александр\Source\Repos\DzZulf\Lab3\Lab3\bin\Debug\Lab3.exe
+C:\Users\Александр\Source\Repos\DzZulf\Lab3\Lab3\bin\Debug\Lab3.pdb
+C:\Users\Александр\Source\Repos\DzZulf\Lab3\Lab3\obj\Debug\Lab3.csprojResolveAssemblyReference.cache
+C:\Users\Александр\Source\Repos\DzZulf\Lab3\Lab3\obj\Debug\Lab3.Properties.Resources.resources
+C:\Users\Александр\Source\Repos\DzZulf\Lab3\Lab3\obj\Debug\Lab3.csproj.GenerateResource.Cache
+C:\Users\Александр\Source\Repos\DzZulf\Lab3\Lab3\obj\Debug\Lab3.csproj.CoreCompileInputs.cache
+C:\Users\Александр\Source\Repos\DzZulf\Lab3\Lab3\obj\Debug\Lab3.exe
+C:\Users\Александр\Source\Repos\DzZulf\Lab3\Lab3\obj\Debug\Lab3.pdb
+C:\Users\Александр\Source\Repos\DzZulf\Lab3\Lab3\obj\Debug\Lab3.ChangeGroupForm.resources
+C:\Users\Александр\Source\Repos\DzZulf\Lab3\Lab3\obj\Debug\Lab3.MainForm.resources
+C:\Users\Александр\Source\Repos\DzZulf\Lab3\Lab3\obj\Debug\Lab3.EditForm.resources
+C:\Users\Александр\Source\Repos\DzZulf\Lab3\Lab3\obj\Debug\Lab3.DeleteForm.resources
+C:\Users\Александр\Source\Repos\DzZulf\Lab3\Lab3\obj\Debug\Lab3.SearchForm.resources
+C:\Users\Александр\Source\Repos\DzZulf\Lab3\Lab3\obj\Debug\Lab3.FilterForm.resources
