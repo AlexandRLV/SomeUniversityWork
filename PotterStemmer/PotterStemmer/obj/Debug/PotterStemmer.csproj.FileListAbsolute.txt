@@ -1,0 +1,7 @@
+C:\Users\Александр\Source\Repos\DzZulf\PotterStemmer\PotterStemmer\bin\Debug\PotterStemmer.exe.config
+C:\Users\Александр\Source\Repos\DzZulf\PotterStemmer\PotterStemmer\bin\Debug\PotterStemmer.exe
+C:\Users\Александр\Source\Repos\DzZulf\PotterStemmer\PotterStemmer\bin\Debug\PotterStemmer.pdb
+C:\Users\Александр\Source\Repos\DzZulf\PotterStemmer\PotterStemmer\obj\Debug\PotterStemmer.csprojAssemblyReference.cache
+C:\Users\Александр\Source\Repos\DzZulf\PotterStemmer\PotterStemmer\obj\Debug\PotterStemmer.csproj.CoreCompileInputs.cache
+C:\Users\Александр\Source\Repos\DzZulf\PotterStemmer\PotterStemmer\obj\Debug\PotterStemmer.exe
+C:\Users\Александр\Source\Repos\DzZulf\PotterStemmer\PotterStemmer\obj\Debug\PotterStemmer.pdb
