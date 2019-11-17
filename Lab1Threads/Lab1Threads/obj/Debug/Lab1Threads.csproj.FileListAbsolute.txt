@@ -1,0 +1,10 @@
+C:\Users\Александр\Source\Repos\DzZulf\Lab1Threads\Lab1Threads\bin\Debug\Lab1Threads.exe.config
+C:\Users\Александр\Source\Repos\DzZulf\Lab1Threads\Lab1Threads\bin\Debug\Lab1Threads.exe
+C:\Users\Александр\Source\Repos\DzZulf\Lab1Threads\Lab1Threads\bin\Debug\Lab1Threads.pdb
+C:\Users\Александр\Source\Repos\DzZulf\Lab1Threads\Lab1Threads\obj\Debug\Lab1Threads.csprojAssemblyReference.cache
+C:\Users\Александр\Source\Repos\DzZulf\Lab1Threads\Lab1Threads\obj\Debug\Lab1Threads.Form1.resources
+C:\Users\Александр\Source\Repos\DzZulf\Lab1Threads\Lab1Threads\obj\Debug\Lab1Threads.Properties.Resources.resources
+C:\Users\Александр\Source\Repos\DzZulf\Lab1Threads\Lab1Threads\obj\Debug\Lab1Threads.csproj.GenerateResource.cache
+C:\Users\Александр\Source\Repos\DzZulf\Lab1Threads\Lab1Threads\obj\Debug\Lab1Threads.csproj.CoreCompileInputs.cache
+C:\Users\Александр\Source\Repos\DzZulf\Lab1Threads\Lab1Threads\obj\Debug\Lab1Threads.exe
+C:\Users\Александр\Source\Repos\DzZulf\Lab1Threads\Lab1Threads\obj\Debug\Lab1Threads.pdb
