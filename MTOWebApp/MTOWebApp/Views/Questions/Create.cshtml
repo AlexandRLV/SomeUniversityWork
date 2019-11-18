@@ -1,0 +1,121 @@
+﻿@model MTOWebApp.Models.ModulesViewModels.QuestionViewModel
+
+@{
+    ViewData["Title"] = "Добавить вопрос";
+}
+
+<h2>Добавить вопрос</h2>
+
+<hr />
+<div class="row">
+    @if (ViewData["Error"] != null)
+    {
+        <h4>@ViewData["Error"]</h4>
+    }
+        <div class="col-md-4">
+            <h4>Выберите тип вопроса:</h4>
+            <form asp-action="Create" method="get">
+                <input type="hidden" name="moduleId" value="@Model.TestModuleId" />
+                <input type="hidden" name="serialNum" value="@Model.SerialNum" />
+                <select name="type" class="form-control">
+                    <option value="Input">Ввод ответа</option>
+                    <option value="Choose">Выбор ответа(ов)</option>
+                    <option value="Mapping">Сопоставление</option>
+                </select>
+                <input type="submit" value="Выбрать" class="btn btn-default" />
+            </form>
+            @if (Model.Type == "Input")
+            {
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" name="Type" value="Input" />
+                    <input type="hidden" asp-for="TestModuleId" value="@Model.TestModuleId" />
+                    <input type="hidden" asp-for="SerialNum" value="@Model.SerialNum" />
+                    <div class="form-group">
+                        <label asp-for="Task" class="control-label">Задание</label>
+                        <input asp-for="Task" class="form-control" />
+                        <span asp-validation-for="Task" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Answers1" class="control-label">Правильный ответ</label>
+                        <input asp-for="Answers1" class="form-control" />
+                        <span asp-validation-for="Answers1" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Добавить" class="btn btn-default" />
+                    </div>
+                </form>
+            }
+            else if (Model.Type == "Choose")
+            {
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" name="Type" value="Choose" />
+                    <input type="hidden" asp-for="TestModuleId" value="@Model.TestModuleId" />
+                    <input type="hidden" asp-for="SerialNum" value="@Model.SerialNum" />
+                    <div class="form-group">
+                        <label asp-for="Task" class="control-label">Задание</label>
+                        <input asp-for="Task" class="form-control" />
+                        <span asp-validation-for="Task" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Answers1" class="control-label">Введите четыре ответа и выберите правильные</label>
+                        <div class="form-inline"><input asp-for="Answers1" class="form-control" /> <input name="Answers2" type="checkbox" value="0" /></div>
+                        <br />
+                        <div class="form-inline"><input asp-for="Answers1" class="form-control" /> <input name="Answers2" type="checkbox" value="1" /></div>
+                        <br />
+                        <div class="form-inline"><input asp-for="Answers1" class="form-control" /> <input name="Answers2" type="checkbox" value="2" /></div>
+                        <br />
+                        <div class="form-inline"><input asp-for="Answers1" class="form-control" /> <input name="Answers2" type="checkbox" value="3" /></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Добавить" class="btn btn-default" />
+                    </div>
+                </form>
+            }
+            else if (Model.Type == "Mapping")
+            {
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" name="Type" value="Mapping" />
+                    <input type="hidden" asp-for="TestModuleId" value="@Model.TestModuleId" />
+                    <input type="hidden" asp-for="SerialNum" value="@Model.SerialNum" />
+                    <div class="form-group">
+                        <label asp-for="Task" class="control-label">Задание</label>
+                        <input asp-for="Task" class="form-control" />
+                        <span asp-validation-for="Task" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Answers1" class="control-label">Введите соответствующие варианты</label>
+                        <div class="form-horizontal">
+                            <input asp-for="Answers1" class="form-control" />
+                            <input asp-for="Answers2" class="form-control" />
+                        </div>
+                        <hr />
+                        <div class="form-horizontal">
+                            <input asp-for="Answers1" class="form-control" />
+                            <input asp-for="Answers2" class="form-control" />
+                        </div>
+                        <hr />
+                        <div class="form-horizontal">
+                            <input asp-for="Answers1" class="form-control" />
+                            <input asp-for="Answers2" class="form-control" />
+                        </div>
+                        <hr />
+                        <div class="form-horizontal">
+                            <input asp-for="Answers1" class="form-control" />
+                            <input asp-for="Answers2" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Добавить" class="btn btn-default" />
+                    </div>
+                </form>
+            }
+        </div>
+</div>
+
+<div>
+    <a asp-action="Details" asp-controller="TestModules" asp-route-id="@Model.TestModuleId">Назад к тестированию</a>
+</div>
+

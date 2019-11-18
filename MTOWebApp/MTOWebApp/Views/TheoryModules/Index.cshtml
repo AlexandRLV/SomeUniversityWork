@@ -1,0 +1,36 @@
+﻿@model IEnumerable<MTOWebApp.Models.ModulesViewModels.TheoryViewModel>
+
+@{
+    ViewData["Title"] = "Изучение теории";
+}
+
+<h2>Изучение теории</h2>
+
+<p>
+    @if (User.IsInRole("teacher"))
+    {
+        <a asp-action="Create">Создать</a>
+    }
+</p>
+
+<hr />
+<table class="table-bordered">
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="row-lg-9">
+                <td class="col-lg-5">
+                    <h3><a asp-action="Details" asp-route-id="@item.Id">@Html.DisplayFor(modelItem => item.Name)</a></h3>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td class="col-lg-2">
+                    <a asp-controller="Paragraphs" asp-action="IndexToModule" asp-route-id="@item.Id">Параграфов: @item.Paragraphs</a>
+                </td>
+                <td class="col-lg-2">
+                    <a asp-action="Edit" asp-route-id="@item.Id">Редактировать</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

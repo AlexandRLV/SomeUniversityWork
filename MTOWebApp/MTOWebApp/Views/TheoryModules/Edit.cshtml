@@ -1,0 +1,42 @@
+﻿@model MTOWebApp.Models.ModulesViewModels.TheoryViewModel
+
+@{
+    ViewData["Title"] = "Редактировать модуль";
+}
+
+<h2>Редактировать модуль</h2>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Сохранить" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    @if (Model.Paragraphs < 3)
+    {
+        <a asp-controller="Paragraphs" asp-action="Create" asp-route-moduleId="@Model.Id">Добавить параграфы</a>
+    }
+    <br />
+    <a asp-action="HideTheme" asp-route-id="@Model.Id">Скрыть тему от студентов</a>
+    <br />
+    <a asp-action="Index">К списку</a>
+</div>
+

@@ -1,0 +1,76 @@
+﻿@model MTOWebApp.Models.ModulesViewModels.QuestionViewModel
+
+@{
+    ViewData["Title"] = "Вопрос";
+}
+
+<h2>Тестирование по теме @ViewData["TheoryName"]</h2>
+<br />
+<h3>Вопрос номер @Model.SerialNum</h3>
+
+<div>
+    <hr />
+    <form asp-action="AnswerQuestion">
+        <input type="hidden" name="score" value="@ViewData["Score"]" />
+        <input type="hidden" asp-for="Id" value="@Model.Id" />
+        <input type="hidden" asp-for="Type" value="@Model.Type" />
+        <input type="hidden" asp-for="TestModuleId" value="@Model.TestModuleId" />
+        <input type="hidden" asp-for="SerialNum" value="@Model.SerialNum" />
+        <label asp-for="Task">@Model.Task</label>
+        <br />
+        @if (Model.Type == "Input")
+        {
+            <input name="Answers1" value="" />
+        }
+        else if (Model.Type == "Choose")
+        {
+            if (Model.Answers1.Count == 1)
+            {
+                Random r = new Random();
+                var all = Model.Answers1.Concat(Model.Answers2).ToList();
+                for (int i = 0; i < 4; i++)
+                {
+                    string a = all[r.Next(all.Count)];
+                    <input type="radio" name="Answers1" value="@a" />@a<br />
+                    all.Remove(a);
+                }
+            }
+            else
+            {
+                Random r = new Random();
+                var all = Model.Answers1.Concat(Model.Answers2).ToList();
+                for (int i = 0; i < 4; i++)
+                {
+                    string a = all[r.Next(all.Count)];
+                    <input type="checkbox" name="Answers1" value="@a" />@a<br />
+                    all.Remove(a);
+                }
+            }
+        }
+        else if (Model.Type == "Mapping")
+        {
+            for (int i = 0; i < Model.Answers1.Count; i++)
+            {
+                <label asp-for="Answers1">@Model.Answers1[i]</label>
+                <select name="Answers2">
+                    @for (int j = 0; j < Model.Answers2.Count; j++)
+                    {
+                        <option value="@Model.Answers2[j]">@Model.Answers2[j]</option>
+                    }
+                </select>
+                <br />
+            }
+        }
+        <button type="submit" value="Ответить">Ответить</button>
+    </form>
+</div>
+<div>
+    @if (User.IsInRole("teacher"))
+    {
+        <a asp-action="Edit" asp-route-id="@Model.Id">Редактировать</a>
+        <br />
+        <a asp-action="Delete" asp-route-id="@Model.Id">Удалить</a>
+        <br />
+    }
+    <a asp-action="Details" asp-controller="TestModules" asp-route-moduleId="@Model.TestModuleId">Назад к тестированию</a>
+</div>

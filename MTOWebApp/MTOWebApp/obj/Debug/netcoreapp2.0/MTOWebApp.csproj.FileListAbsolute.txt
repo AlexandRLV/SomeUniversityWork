@@ -1,0 +1,12 @@
+C:\Users\Александр\Source\Repos\DzZulf\MTOWebApp\MTOWebApp\bin\Debug\netcoreapp2.0\MTOWebApp.deps.json
+C:\Users\Александр\Source\Repos\DzZulf\MTOWebApp\MTOWebApp\bin\Debug\netcoreapp2.0\MTOWebApp.runtimeconfig.json
+C:\Users\Александр\Source\Repos\DzZulf\MTOWebApp\MTOWebApp\bin\Debug\netcoreapp2.0\MTOWebApp.runtimeconfig.dev.json
+C:\Users\Александр\Source\Repos\DzZulf\MTOWebApp\MTOWebApp\bin\Debug\netcoreapp2.0\MTOWebApp.dll
+C:\Users\Александр\Source\Repos\DzZulf\MTOWebApp\MTOWebApp\bin\Debug\netcoreapp2.0\MTOWebApp.pdb
+C:\Users\Александр\Source\Repos\DzZulf\MTOWebApp\MTOWebApp\obj\Debug\netcoreapp2.0\MTOWebApp.csprojAssemblyReference.cache
+C:\Users\Александр\Source\Repos\DzZulf\MTOWebApp\MTOWebApp\obj\Debug\netcoreapp2.0\MTOWebApp.csproj.CoreCompileInputs.cache
+C:\Users\Александр\Source\Repos\DzZulf\MTOWebApp\MTOWebApp\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Александр\Source\Repos\DzZulf\MTOWebApp\MTOWebApp\obj\Debug\netcoreapp2.0\MTOWebApp.AssemblyInfoInputs.cache
+C:\Users\Александр\Source\Repos\DzZulf\MTOWebApp\MTOWebApp\obj\Debug\netcoreapp2.0\MTOWebApp.AssemblyInfo.cs
+C:\Users\Александр\Source\Repos\DzZulf\MTOWebApp\MTOWebApp\obj\Debug\netcoreapp2.0\MTOWebApp.dll
+C:\Users\Александр\Source\Repos\DzZulf\MTOWebApp\MTOWebApp\obj\Debug\netcoreapp2.0\MTOWebApp.pdb

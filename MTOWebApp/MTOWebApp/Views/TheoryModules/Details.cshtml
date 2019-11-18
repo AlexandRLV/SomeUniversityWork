@@ -1,0 +1,38 @@
+﻿@model MTOWebApp.Models.ModulesViewModels.TheoryViewModel
+
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<div>
+    <dl class="dl-horizontal">
+        <dd>
+            <h3>@Html.DisplayFor(model => model.Name)</h3>
+        </dd>
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <br />
+        <dd>
+            <a asp-controller="Paragraphs" asp-action="IndexToModule" asp-route-id="@Model.Id">Параграфов: @Model.Paragraphs</a>
+        </dd>
+        <dd>
+            @if (User.IsInRole("teacher"))
+            {
+                <a asp-action="Edit" asp-route-id="@Model.Id">Редактировать</a>
+                <br />
+                @if (Model.TestId == null)
+                {
+                    <a asp-action="Create" asp-controller="TestModules" asp-route-id="@Model.Id">Создать тестирование</a>
+                    <br />
+                }
+            }
+            @if (Model.TestId != null)
+            {
+                <a asp-action="Details" asp-controller="TestModules" asp-route-id="@Model.TestId">Перейти к тестированию</a>
+                <br />
+            }
+            <a asp-action="Index">К списку</a>
+        </dd>
+    </dl>
+</div>

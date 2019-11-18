@@ -1,0 +1,64 @@
+﻿@model MTOWebApp.Models.ModulesViewModels.ParagraphViewModel
+
+@{
+    ViewData["Title"] = "Редактировать параграф";
+}
+
+<h2>Редактировать параграф</h2>
+
+<hr />
+<div class="row">
+    <div class="col-lg-5">
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" name="id" value="@ViewData["Pid"]" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label">Название</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Text" class="control-label">Содержание</label>
+                <textarea name="Text" class="form-control">@ViewData["Data"]</textarea>
+                <span asp-validation-for="Text" class="text-danger"></span>
+            </div>
+            @if (ViewData["PicturePath"].ToString() != "none")
+            {
+                <img class="col-lg-5" src="/@ViewData["PicturePath"]" />
+            }
+            <div class="form-group">
+                <label asp-for="Picture" class="control-label">Картинка к тексту</label>
+                <input type="file" asp-for="Picture" /><br>
+                <span asp-validation-for="Picture" class="text-danger"></span>
+            </div>
+            @if (ViewData["AudioPath"].ToString() != "none")
+            {
+                <audio controls="controls" src="/@ViewData["AudioPath"]" />
+            }
+            <div class="form-group">
+                <label asp-for="Audio" class="control-label">Аудио к тексту</label>
+                <input type="file" asp-for="Audio" /><br>
+                <span asp-validation-for="Audio" class="text-danger"></span>
+            </div>
+            @if (ViewData["VideoPath"].ToString() != "none")
+            {
+                <video class="col-lg-5" controls="controls" src="/@ViewData["VideoPath"]" />
+            }
+            <div class="form-group">
+                <label asp-for="Video" class="control-label">Видео к тексту</label>
+                <input type="file" asp-for="Video" /><br>
+                <span asp-validation-for="Video" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="ModuleId" value="@Model.ModuleId" />
+            <input type="hidden" asp-for="SerialNum" value="@Model.SerialNum" />
+            <div class="form-group">
+                <input type="submit" value="Сохранить" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="IndexToModule" asp-route-id="@Model.ModuleId">К списку</a>
+</div>
+

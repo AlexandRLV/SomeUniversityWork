@@ -1,0 +1,23 @@
+﻿@model MTOWebApp.Models.ModulesViewModels.HideThemeViewModel
+
+<h2>Сокрытие темы <a asp-action="Details" asp-route-id="@Model.ModuleId">@ViewData["Modulename"]</a> </h2>
+
+<form asp-action="HideTheme" method="post">
+    <input asp-for="ModuleId" type="hidden" value="@Model.ModuleId" />
+    <div class="form-group">
+        @foreach (ApplicationUser user in Model.AllUsers)
+        {
+            if (Model.HiddenUsers.Contains(user.Id))
+            {
+                <input name="HiddenUsers" type="checkbox" value="@user.Id" checked="checked" />
+                      @user.Surname @user.Name @user.MiddleName <br />
+            }
+            else
+            {
+                <input name="HiddenUsers" type="checkbox" value="@user.Id"/>
+                    @user.Surname @user.Name @user.MiddleName <br />
+            }
+        }
+    </div>
+    <button type="submit" class="btn btn-primary">Сохранить</button>
+</form>

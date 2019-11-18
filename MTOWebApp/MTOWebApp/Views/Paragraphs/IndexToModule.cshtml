@@ -1,0 +1,24 @@
+﻿@model IEnumerable<MTOWebApp.Data.Paragraph>
+
+@{
+    ViewData["Title"] = "Тема " + ViewData["ModuleName"];
+}
+
+<h2>Тема <a asp-controller="TheoryModules" asp-action="Details" asp-route-id="@ViewData["ModuleId"]">@ViewData["ModuleName"]</a></h2>
+
+<hr />
+<table class="table-bordered">
+    <tbody>
+@foreach (var item in Model) 
+{
+        <tr class="row-lg-6">
+            <td class="col-lg-4">
+                <h3><a asp-action="Details" asp-route-id="@item.Id">@Html.DisplayFor(modelItem => item.Name)</a></h3>
+            </td>
+            <td class="col-lg-2">
+                Порядковый номер в теме: @item.SerialNum
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

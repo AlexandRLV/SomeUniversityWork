@@ -1,0 +1,57 @@
+﻿@model MTOWebApp.Data.Paragraph
+
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<div>
+    <dl class="dl-horizontal">
+        <dd>
+            <h3>@Model.Name</h3>
+        </dd>
+        <dd>
+            @ViewData["Data"]
+        </dd>
+        @if (Model.PictureFileName != null)
+        {
+            <dd>
+                <img class="col-lg-5" src="/@ViewData["PicturePath"]" />
+            </dd>
+        }
+        @if (Model.SoundFileName != null)
+        {
+            <dd>
+                <audio controls="controls" src="/@ViewData["AudioPath"]" />
+            </dd>
+        }
+        @if (Model.VideoFileName != null)
+        {
+            <dd>
+                <video class="col-lg-5" controls="controls" src="/@ViewData["VideoPath"]" />
+            </dd>
+        }
+    </dl>
+</div>
+<div>
+    @if (Model.SerialNum > 1 && ViewData["Prev"] != "none")
+    {
+        <a asp-action="Details" asp-route-id="@ViewData["Prev"]">Назад</a>
+    }
+    @if (Model.SerialNum == 2 && ViewData["Prev"] != "none" && ViewData["Next"] != "none")
+    {
+        <br />
+    }
+    @if (Model.SerialNum < 3 && ViewData["Next"] != "none")
+    {
+        <a asp-action="Details" asp-route-id="@ViewData["Next"]">Вперёд</a>
+    }
+    <br />
+    <a asp-controller="TheoryModules" asp-action="Details" asp-route-id="@Model.TheoryModule.Id">К модулю</a>
+    <br />
+    @if (User.IsInRole("teacher"))
+    {
+        <a asp-action="Edit" asp-route-id="@Model.Id">Редактировать</a>
+        <br />
+        <a asp-action="Delete" asp-route-id="@Model.Id">Удалить</a>
+    }
+</div>

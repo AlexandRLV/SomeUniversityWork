@@ -1,0 +1,55 @@
+﻿@model MTOWebApp.Models.ModulesViewModels.QuestionViewModel
+
+@{
+    ViewData["Title"] = "Удалить";
+}
+
+<h3>Удалить этот вопрос?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dd>
+            <h4>@Model.Task</h4>
+        </dd>
+        <dd>
+            @if (Model.Type == "Input")
+            {
+                <p>Ответ: @Model.Answers1[0]</p>
+            }
+            else if (Model.Type == "Choose")
+            {
+                <p>Правильные варианты:</p>
+                foreach (string a in Model.Answers1)
+                {
+                    <p>@a</p>
+                }
+                <p>Неправильные варианты:</p>
+                foreach (string a in Model.Answers1)
+                {
+                    <p>@a</p>
+                }
+            }
+            else if (Model.Type == "Mapping")
+            {
+                for (int i = 0; i < Model.Answers1.Count; i++)
+                {
+                    <div class="row">
+                        <p>
+                            <div class="col-md-1">@Model.Answers1[i]</div>
+                            <div class="col-md-1">@Model.Answers2[i]</div>
+                        </p>
+                    </div>
+                }
+            }
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Удалить" class="btn btn-default" />
+    </form>
+    <br />
+    <a asp-action="Index" asp-route-id="@Model.TestModuleId">Назад к списку</a>
+    <br />
+    <a asp-action="Details" asp-controller="TestModules" asp-route-id="@Model.TestModuleId">Назад к тестированию</a>
+</div>

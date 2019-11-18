@@ -1,0 +1,11 @@
+Админ:
+	Логин: i.vanov@email.com
+	Пароль: password
+	
+Студент1:
+	Логин: v.petrov@email.com
+	Пароль: petrovvasya
+	
+Препод1:
+	Логин: prepod@email.com
+	Пароль: prepodpassword

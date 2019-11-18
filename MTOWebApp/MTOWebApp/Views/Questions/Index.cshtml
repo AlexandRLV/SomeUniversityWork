@@ -1,0 +1,49 @@
+﻿@model IEnumerable<MTOWebApp.Data.Question>
+
+@{
+    ViewData["Title"] = "Вопросы";
+}
+
+<h3>Вопросы к модулю <a asp-action="Details" asp-controller="TheoryModules" asp-route-id="@ViewData["ModuleId"]">@ViewData["ModuleName"]</a></h3>
+<h4><a asp-action="Details" asp-controller="TestModules" asp-route-id="@ViewData["TestId"]">Перейти к тестированию</a></h4>
+@if (Model.Count() < 9)
+{
+    <h4><a asp-action="Create" asp-route-moduleId="@ViewData["TestId"]">Добавить вопросы</a></h4>
+}
+<hr />
+
+<table class="table-bordered">
+    <tbody>
+@foreach (var item in Model) {
+        <tr class="row-lg-7">
+            <td class="col-lg-2">
+                <h4>Вопрос номер @item.SerialNum</h4>
+            </td>
+            <td class="col-lg-3">
+                @if (item.Type == "Input")
+                {
+                    <p>Ввод ответа</p>
+                }
+                else if (item.Type == "Choose")
+                {
+                    <p>Выбор правильного(ых) ответа(ов)</p>
+                }
+                else if (item.Type == "Mapping")
+                {
+                    <p>Сопоставление</p>
+                }
+            </td>
+            <td class="col-lg-2">
+                @if (User.IsInRole("teacher"))
+                {
+                    <div>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Редактировать</a> | 
+                        <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a> |
+                    </div>
+                }
+                <a asp-action="Details" asp-route-id="@item.Id">Перейти</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

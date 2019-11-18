@@ -1,0 +1,26 @@
+﻿@model MTOWebApp.Models.ModulesViewModels.TheoryViewModel
+
+@{
+    ViewData["Title"] = "Удалить";
+}
+
+<h3>Удалить модуль?</h3>
+<div>
+    <dl class="dl-horizontal">
+        <dd>
+            <h3>@Html.DisplayFor(model => model.Name)</h3>
+        </dd>
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dd>
+            Параграфов: @Model.Paragraphs
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Удалить" class="btn btn-default" /> |
+        <a asp-action="Index">К списку</a>
+    </form>
+</div>

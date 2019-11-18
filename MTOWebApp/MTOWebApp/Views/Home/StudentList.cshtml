@@ -1,0 +1,26 @@
+﻿@model IEnumerable<MTOWebApp.Models.ApplicationUser>
+
+
+@{
+    ViewData["Title"] = "Студенты";
+}
+
+<h2>Студенты</h2>
+
+<table class="table-bordered">
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="row-lg-4">
+                <td class="col-lg-3">
+                    @Html.DisplayFor(modelItem => item.Surname)
+                    @Html.DisplayFor(modelItem => item.Name)
+                    @Html.DisplayFor(modelItem => item.MiddleName)
+                </td>
+                <td class="col-lg-1">
+                    <a asp-action="Profile" asp-controller="Home" asp-route-email="@item.Email">Перейти в профиль</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

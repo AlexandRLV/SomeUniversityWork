@@ -1,0 +1,56 @@
+﻿@model MTOWebApp.Models.ManageViewModels.IndexViewModel
+
+@inject UserManager<ApplicationUser> UserManager
+
+@{
+    ViewData["Title"] = "Профиль";
+}
+
+@if (ViewData["role"].ToString() == "admin")
+{
+    <h2>Профиль администратора</h2>
+}
+else if (ViewData["role"].ToString() == "teacher")
+{
+    <h2>Профиль преподавателя</h2>
+}
+else if (ViewData["role"].ToString() == "student")
+{
+    <h2>Профиль студента</h2>
+}
+else
+{
+    <h2>Профиль пользователя</h2>
+}
+
+@if (UserManager.GetUserId(User) == Model.Id)
+{
+    <h4><a asp-action="Index" asp-controller="Manage">Редактировать информацию профиля</a></h4>
+}
+
+<div>
+    <dl class="dl-horizontal">
+        <dd>
+            <h3>@Model.Surname @Model.Name @Model.MiddleName</h3>
+        </dd>
+        <dd>
+            <h3>Email: @Model.Email</h3>
+        </dd>
+        @if (Model.LastTest != null)
+        {
+            <dd>
+                <p>
+                    <h4>Последнее тестирование:</h4> @Model.LastTest.TestDate.ToString()
+                    <br />
+                    Набранные баллы: @Model.LastTest.Score
+                    <br />
+                    <a asp-action="Details" asp-controller="TestModules" asp-route-id="@Model.LastTest.TestModule.Id">Тестирование</a>
+                    <br />
+                    <a asp-action="TestResults" asp-controller="Questions" asp-route-id="@Model.LastTest.Id">Открыть список ответов</a>
+                    <br />
+                </p>
+            </dd>
+        }
+    </dl>
+</div>
+

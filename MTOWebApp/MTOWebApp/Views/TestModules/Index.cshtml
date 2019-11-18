@@ -1,0 +1,31 @@
+﻿@model IEnumerable<MTOWebApp.Data.TestModule>
+
+@{
+    ViewData["Title"] = "Проверь себя";
+}
+
+<h2>Проверь себя</h2>
+
+<br />
+<hr />
+<table class="table-bordered">
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="row-lg-7">
+                <td class="col-lg-4">
+                    Тестирование по модулю @item.TheoryModule.Name
+                </td>
+                <td class="col-lg-1">
+                    <a asp-action="Index" asp-controller="Questions" asp-route-id="@item.Id">Список вопросов</a>
+                </td>
+                <td class="col-lg-1">
+                    <a asp-action="Details" asp-route-id="@item.Id">Перейти</a>
+                </td>
+                <td class="col-lg-1">
+                    <a asp-action="Delete" asp-route-id="@item.Id"> Удалить </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

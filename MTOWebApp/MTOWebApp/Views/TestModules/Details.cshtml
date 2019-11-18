@@ -1,0 +1,30 @@
+﻿@model MTOWebApp.Data.TestModule
+
+@{
+    ViewData["Title"] = "Тестирование";
+}
+
+<h2>Тестирование по модулю <a asp-action="Details" asp-controller="TheoryModules" asp-route-id="@Model.TheoryModule.Id">@Model.TheoryModule.Name</a></h2>
+
+<div>
+    @if (ViewData["LastScore"] != "none")
+    {
+        <h4>Последнее тестирование: @ViewData["LastDate"]</h4>
+        <h4>Набранные баллы: @ViewData["LastScore"]</h4>
+    }
+    @if (User.IsInRole("teacher"))
+    {
+        @if (ViewData["AddQuestions"].ToString() == "true")
+        {
+            <a asp-action="Create" asp-controller="Questions" asp-route-moduleId="@Model.Id">Добавить вопросы</a>
+            <br />
+        }
+        <a asp-action="Index" asp-controller="Questions" asp-route-id="@Model.Id">Список вопросов</a>
+        <br />
+        <a asp-action="Delete" asp-route-id="@Model.Id">Удалить</a>
+        <br />
+    }
+    <a asp-action="AnswerQuestion" asp-controller="Questions" asp-route-moduleId="@Model.Id">Приступить к тестированию</a>
+    <br />
+    <a asp-action="Index">Назад к списку</a>
+</div>

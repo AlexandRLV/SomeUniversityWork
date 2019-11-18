@@ -1,0 +1,60 @@
+﻿@model MTOWebApp.Models.ModulesViewModels.TestResultViewModel
+
+@{
+    ViewData["Title"] = "Результат тестирования";
+}
+
+<h2>Результат тестирования</h2>
+<div>
+    <dl class="dl-horizontal">
+        <dd>
+            <h4>Дата: @Model.Date.ToString()</h4>
+        </dd>
+        <dd>
+            <h4>Результат: @Model.Score</h4>
+        </dd>
+        <dd>
+            <h5><a asp-action="Details" asp-controller="TestModules" asp-route-id="@Model.TestModule.Id">Перейти к тестированию</a></h5>
+            <h5><a asp-action="Details" asp-controller="TheoryModules" asp-route-id="@Model.TestModule.TheoryModule.Id">Перейти к теории</a></h5>
+        </dd>
+        @foreach (var a in Model.Answers)
+        {
+            <dd class="thumbnail row-lg-2">
+                <h4>Вопрос: @a.Task</h4>
+                @if (a.Type == "Input")
+                {
+                    <h4>Ответ: @a.Answers1[0]</h4>
+                }
+                else if (a.Type == "Choose")
+                {
+                    <h4>Ответ:</h4>
+                    @foreach (var s in a.Answers1)
+                    {
+                        if (a.Answers2.Contains(s))
+                        {
+                            <h5><input type="checkbox" checked="checked" disabled/> @s</h5>
+                        }
+                        else
+                        {
+                            <h5><input type="checkbox" disabled /> @s</h5>
+                        }
+                    }
+                }
+                else if (a.Type == "Mapping")
+                {
+                    <h4>Ответ:</h4>
+                    <div>
+                        @for (int i = 0; i < a.Answers1.Count; i++)
+                        {
+                            
+                            <p>
+                                <div class="list-group-item">@a.Answers1[i] - @a.Answers2[i]</div>
+                            </p>
+                        }
+                    </div>
+                }
+                <br />
+            </dd>
+        }
+    </dl>
+</div>
