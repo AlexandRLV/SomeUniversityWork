@@ -1,0 +1,54 @@
+﻿@model WebAppMTO.Data.Paragraph
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Paragraph</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FolderName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FolderName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TextFileName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TextFileName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.VideoFileName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.VideoFileName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AnimFileName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AnimFileName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SoundFileName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SoundFileName)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
