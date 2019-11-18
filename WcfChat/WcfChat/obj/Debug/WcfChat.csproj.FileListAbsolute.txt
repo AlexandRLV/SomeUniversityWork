@@ -1,0 +1,14 @@
+C:\Users\Александр\Source\Repos\WcfChat\WcfChat\bin\Debug\WcfChat.dll.config
+C:\Users\Александр\Source\Repos\WcfChat\WcfChat\bin\Debug\WcfChat.dll
+C:\Users\Александр\Source\Repos\WcfChat\WcfChat\bin\Debug\WcfChat.pdb
+C:\Users\Александр\Source\Repos\WcfChat\WcfChat\obj\Debug\WcfChat.csprojAssemblyReference.cache
+C:\Users\Александр\Source\Repos\WcfChat\WcfChat\obj\Debug\WcfChat.csproj.CoreCompileInputs.cache
+C:\Users\Александр\Source\Repos\WcfChat\WcfChat\obj\Debug\WcfChat.dll
+C:\Users\Александр\Source\Repos\WcfChat\WcfChat\obj\Debug\WcfChat.pdb
+C:\Users\Александр\Source\Repos\WcfChat\WcfChat\bin\Debug\EntityFramework.dll
+C:\Users\Александр\Source\Repos\WcfChat\WcfChat\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Александр\Source\Repos\WcfChat\WcfChat\bin\Debug\EntityFramework.xml
+C:\Users\Александр\Source\Repos\WcfChat\WcfChat\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Александр\Source\Repos\WcfChat\WcfChat\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Александр\Source\Repos\WcfChat\WcfChat\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Александр\Source\Repos\WcfChat\WcfChat\obj\Debug\WcfChat.csproj.CopyComplete

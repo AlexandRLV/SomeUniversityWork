@@ -1,0 +1,17 @@
+C:\Users\Александр\Source\Repos\WcfChat\ChatHost\bin\Debug\ChatHost.exe.config
+C:\Users\Александр\Source\Repos\WcfChat\ChatHost\bin\Debug\ChatHost.exe
+C:\Users\Александр\Source\Repos\WcfChat\ChatHost\bin\Debug\ChatHost.pdb
+C:\Users\Александр\Source\Repos\WcfChat\ChatHost\bin\Debug\WcfChat.dll
+C:\Users\Александр\Source\Repos\WcfChat\ChatHost\bin\Debug\WcfChat.pdb
+C:\Users\Александр\Source\Repos\WcfChat\ChatHost\bin\Debug\WcfChat.dll.config
+C:\Users\Александр\Source\Repos\WcfChat\ChatHost\obj\Debug\ChatHost.csprojAssemblyReference.cache
+C:\Users\Александр\Source\Repos\WcfChat\ChatHost\obj\Debug\ChatHost.csproj.CoreCompileInputs.cache
+C:\Users\Александр\Source\Repos\WcfChat\ChatHost\obj\Debug\ChatHost.csproj.CopyComplete
+C:\Users\Александр\Source\Repos\WcfChat\ChatHost\obj\Debug\ChatHost.exe
+C:\Users\Александр\Source\Repos\WcfChat\ChatHost\obj\Debug\ChatHost.pdb
+C:\Users\Александр\Source\Repos\WcfChat\ChatHost\bin\Debug\EntityFramework.dll
+C:\Users\Александр\Source\Repos\WcfChat\ChatHost\bin\Debug\EntityFramework.xml
+C:\Users\Александр\Source\Repos\WcfChat\ChatHost\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Александр\Source\Repos\WcfChat\ChatHost\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Александр\Source\Repos\WcfChat\ChatHost\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Александр\Source\Repos\WcfChat\ChatHost\bin\Debug\ru\EntityFramework.SqlServer.resources.dll

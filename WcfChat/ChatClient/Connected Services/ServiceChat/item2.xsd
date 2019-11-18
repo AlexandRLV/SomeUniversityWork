@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WcfChat" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfChat" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ServerUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Color" type="tns:NameColor" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Room" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ServerUser" nillable="true" type="tns:ServerUser" />
+  <xs:simpleType name="NameColor">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Black" />
+      <xs:enumeration value="Green" />
+      <xs:enumeration value="Brue" />
+      <xs:enumeration value="Red" />
+      <xs:enumeration value="Yellow" />
+      <xs:enumeration value="Gray" />
+      <xs:enumeration value="Purple" />
+      <xs:enumeration value="Pink" />
+      <xs:enumeration value="Orange" />
+      <xs:enumeration value="Brown" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="NameColor" nillable="true" type="tns:NameColor" />
+</xs:schema>
