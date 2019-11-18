@@ -1,0 +1,12 @@
+C:\Users\Александр\Source\Repos\DzZulf\AdoNetApp1\AdoNetApp1\bin\Release\userDb.mdf
+C:\Users\Александр\Source\Repos\DzZulf\AdoNetApp1\AdoNetApp1\bin\Release\userDb_log.ldf
+C:\Users\Александр\Source\Repos\DzZulf\AdoNetApp1\AdoNetApp1\bin\Release\AdoNetApp1.exe.config
+C:\Users\Александр\Source\Repos\DzZulf\AdoNetApp1\AdoNetApp1\bin\Release\AdoNetApp1.exe
+C:\Users\Александр\Source\Repos\DzZulf\AdoNetApp1\AdoNetApp1\bin\Release\AdoNetApp1.pdb
+C:\Users\Александр\Source\Repos\DzZulf\AdoNetApp1\AdoNetApp1\obj\Release\AdoNetApp1.csprojAssemblyReference.cache
+C:\Users\Александр\Source\Repos\DzZulf\AdoNetApp1\AdoNetApp1\obj\Release\AdoNetApp1.Form1.resources
+C:\Users\Александр\Source\Repos\DzZulf\AdoNetApp1\AdoNetApp1\obj\Release\AdoNetApp1.Properties.Resources.resources
+C:\Users\Александр\Source\Repos\DzZulf\AdoNetApp1\AdoNetApp1\obj\Release\AdoNetApp1.csproj.GenerateResource.cache
+C:\Users\Александр\Source\Repos\DzZulf\AdoNetApp1\AdoNetApp1\obj\Release\AdoNetApp1.csproj.CoreCompileInputs.cache
+C:\Users\Александр\Source\Repos\DzZulf\AdoNetApp1\AdoNetApp1\obj\Release\AdoNetApp1.exe
+C:\Users\Александр\Source\Repos\DzZulf\AdoNetApp1\AdoNetApp1\obj\Release\AdoNetApp1.pdb

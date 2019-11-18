@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Александр\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Александр\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_AdoNetApp1.73866294.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Александр\Source\Repos\DzZulf\AdoNetApp1" t="IncludeFlat">
+      <e p="AdoNetApp1" t="IncludeRecursive">
+        <e p="AdoNetApp1.csproj" t="IncludeRecursive" />
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DbTable.cs" t="Include" />
+        <e p="DeleteBookForm.cs" t="Include" />
+        <e p="DeleteBookForm.Designer.cs" t="Include" />
+        <e p="DeleteBookForm.resx" t="Include" />
+        <e p="DeleteCategoryForm.cs" t="Include" />
+        <e p="DeleteCategoryForm.Designer.cs" t="Include" />
+        <e p="DeleteCategoryForm.resx" t="Include" />
+        <e p="EditCategoryForm.cs" t="Include" />
+        <e p="EditCategoryForm.Designer.cs" t="Include" />
+        <e p="EditCategoryForm.resx" t="Include" />
+        <e p="EditForm.cs" t="Include" />
+        <e p="EditForm.Designer.cs" t="Include" />
+        <e p="EditForm.resx" t="Include" />
+        <e p="Form1.cs" t="Include" />
+        <e p="Form1.Designer.cs" t="Include" />
+        <e p="Form1.resx" t="Include" />
+        <e p="Models" t="Include">
+          <e p="Book.cs" t="Include" />
+          <e p="Category.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="userDb.mdf" t="Include" />
+        <e p="userDb_log.ldf" t="Include" />
+        <e p="userDbDataSet.Designer.cs" t="Include" />
+        <e p="userDbDataSet.xsc" t="Include" />
+        <e p="userDbDataSet.xsd" t="Include" />
+        <e p="userDbDataSet.xss" t="Include" />
+      </e>
+      <e p="AdoNetApp1.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

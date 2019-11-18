@@ -1,0 +1,16 @@
+C:\Users\Александр\Source\Repos\DzZulf\AdoNetApp1\AdoNetApp1\bin\Debug\userDb.mdf
+C:\Users\Александр\Source\Repos\DzZulf\AdoNetApp1\AdoNetApp1\bin\Debug\userDb_log.ldf
+C:\Users\Александр\Source\Repos\DzZulf\AdoNetApp1\AdoNetApp1\bin\Debug\AdoNetApp1.exe.config
+C:\Users\Александр\Source\Repos\DzZulf\AdoNetApp1\AdoNetApp1\bin\Debug\AdoNetApp1.exe
+C:\Users\Александр\Source\Repos\DzZulf\AdoNetApp1\AdoNetApp1\bin\Debug\AdoNetApp1.pdb
+C:\Users\Александр\Source\Repos\DzZulf\AdoNetApp1\AdoNetApp1\obj\Debug\AdoNetApp1.csprojAssemblyReference.cache
+C:\Users\Александр\Source\Repos\DzZulf\AdoNetApp1\AdoNetApp1\obj\Debug\AdoNetApp1.Form1.resources
+C:\Users\Александр\Source\Repos\DzZulf\AdoNetApp1\AdoNetApp1\obj\Debug\AdoNetApp1.Properties.Resources.resources
+C:\Users\Александр\Source\Repos\DzZulf\AdoNetApp1\AdoNetApp1\obj\Debug\AdoNetApp1.csproj.GenerateResource.cache
+C:\Users\Александр\Source\Repos\DzZulf\AdoNetApp1\AdoNetApp1\obj\Debug\AdoNetApp1.csproj.CoreCompileInputs.cache
+C:\Users\Александр\Source\Repos\DzZulf\AdoNetApp1\AdoNetApp1\obj\Debug\AdoNetApp1.exe
+C:\Users\Александр\Source\Repos\DzZulf\AdoNetApp1\AdoNetApp1\obj\Debug\AdoNetApp1.pdb
+C:\Users\Александр\Source\Repos\DzZulf\AdoNetApp1\AdoNetApp1\obj\Debug\AdoNetApp1.EditForm.resources
+C:\Users\Александр\Source\Repos\DzZulf\AdoNetApp1\AdoNetApp1\obj\Debug\AdoNetApp1.EditCategoryForm.resources
+C:\Users\Александр\Source\Repos\DzZulf\AdoNetApp1\AdoNetApp1\obj\Debug\AdoNetApp1.DeleteBookForm.resources
+C:\Users\Александр\Source\Repos\DzZulf\AdoNetApp1\AdoNetApp1\obj\Debug\AdoNetApp1.DeleteCategoryForm.resources
